@@ -1,8 +1,11 @@
-number = int(input("Give me a number negetive or positive"))
+#Ask the user to input two numbers and check which one is the smallest and print it out.
 
-if number == 0:
-    print(f"your numer is {number} and its 0")
-elif number <0:
-    print(f"your number is {number} and its lover than 0")
+print("hi u are going to give me 2 numbers")
+
+num1 = int(input("Give me the first number: "))
+num2 = int(input("Give me the second number"))
+
+if num1 < num2:
+    print("Your second number is bigger than your first")
 else:
-    print(f"your number is {number} and its higher than 0")
+    print("Your first numver is bigger than your second")
