@@ -1,15 +1,11 @@
-# Ask the user to input three angles and check if the triangle has a right angle.
-# Your code should make sure that all three angles are valid and make up a triangle.
+age = int(input("Please enter your age (years): "))
+weight = int(input("Please enter your weight (kg): "))
 
-print("give me three angles of a triangle of your choosing")
-
-a = int(input("Ange första vinkeln: "))
-b = int(input("Ange andra vinkeln: "))
-c = int(input("Ange tredje vinkeln: "))
-
-if a + b + c == 180 and (a == 90 or b == 90 or c == 90):
-    print("wow u managed to do a triangle and it is a right-angled triangle")
-elif a + b + c == 180:
-    print("wow u managed to do a triangle")
+if age > 12 and weight > 40:
+    print("Recommended: 1-2 pills")
+elif 7 <= age <= 12 and 26 <= weight <= 40:
+    print("Recommended: 1/2 - 1 pill")
+elif 3 <= age <= 7 and 15 <= weight <= 25:
+    print("Recommended: 1/2 pill")
 else:
-    print("ojojoj en triangle har totalt 180 grader")
+    print("No recommendation available for the given age and weight.")
