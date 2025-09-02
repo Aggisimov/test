@@ -1,18 +1,10 @@
 import math
 
-# A: 4,4
-# B: 0,-1
-# k= delta a / delta b
-# y= kx + m
+# p1 (3,5) 
+# p2 (-2,4)
 
-y1 = 4
-y2 = 1
-x1 = 4
-x2 = 0
+x1=3
+x2=-2
+y1=5
+y2=4
 
-k = (y2-y1)/(x2-x1)
-print(k)
-
-m = y1-(k*x1)
-
-print(m)
