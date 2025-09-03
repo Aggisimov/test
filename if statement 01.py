@@ -1,11 +1,13 @@
-age = int(input("Please enter your age (years): "))
-weight = int(input("Please enter your weight (kg): "))
+#Let the user input a number. Check if the number is
+#even or odd
+#is divisible by 5
+#is divisble by 5 and odd
 
-if age > 12 and weight > 40:
-    print("Recommended: 1-2 pills")
-elif 7 <= age <= 12 and 26 <= weight <= 40:
-    print("Recommended: 1/2 - 1 pill")
-elif 3 <= age <= 7 and 15 <= weight <= 25:
-    print("Recommended: 1/2 pill")
+num = int(input("Give me a number: "))
+
+if num % 2 != 0 and num % 5 == 0:
+    print("Your number is odd and divisble with 5")
+elif num % 2 !=0:
+    print("your number is odd")
 else:
-    print("No recommendation available for the given age and weight.")
+    print("Your number is even")
